@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
 
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPhone 6, 7, 8 – ------- – */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+/* Styles */
+
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -9,6 +19,28 @@ body{
 background: #C4B35A;
 background: #333333;
 background: #202020; */
+
+
+
+
+
+}
+
+/* Desktops and laptops – ------- – */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* #FFFADF
+background: #C4B35A;
+background: #333333;
+background: #202020; */
+
+
 
 
 /********************** BARRA NAVEGADOR *****************/
@@ -234,3 +266,8 @@ i{
     background-color: white;
     padding: 20px;
 }
+
+
+
+}
+
