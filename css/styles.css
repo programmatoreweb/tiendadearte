@@ -4,6 +4,16 @@ iPad 3
 **********/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
+    body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* #FFFADF
+background: #C4B35A;
+background: #333333;
+background: #202020; */
+
 }
 
 /* iPhone 6, 7, 8 – ------- – */
