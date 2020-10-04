@@ -1,0 +1,296 @@
+
+body {
+    margin: 0;
+    background-color: white;
+   
+}
+
+@media (min-width:701px) { 
+
+
+/***** MENU *******/
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+.menupc {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Verdana;
+    color: pink;
+
+    padding: 10px;
+}
+
+.menupc:hover {
+    font-size: 18px;
+}
+
+.menumobile {
+    display: none;
+}
+
+
+/***** SECTION *******/
+
+
+section {
+    height: 400px;
+    background-color: #edead6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#texto {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: center;
+    justify-content: center;
+}
+
+
+iframe{
+    height: 250px;
+    width: 75%; 
+}
+
+
+section h1 {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+section img {
+    width: 45%;
+    height: 450px;
+    padding: 0;
+}
+
+
+/***** FIGURE *******/
+
+figure {
+    height: 400px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+figure img {
+    width: 250px;
+    height: 250px;
+    padding: 30px 50px 30px 50px;
+    
+    background-color: rgb(223, 138, 180);
+    opacity: 60%;
+    border:  rgb(223, 138, 180) solid 5px;
+}
+
+
+/***** FOOTER *******/
+
+footer {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer i {
+    padding: 5px;
+}
+
+} /*** final media pc ***/
+
+
+
+@media (max-width:700px) {
+
+/***** MENU *******/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    width: 85%;
+}
+
+#sintarget { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#desplegable {
+    width: 150px;
+    height: 250px;
+    padding: 0;
+    opacity: 0;
+    position: relative;
+    left: 160px;
+    top: -500px;
+
+    transition: top 0.8s, opacity 0.8s;
+
+    background-color: #d65d5d; opacity: 80%; 
+    /*box-shadow: black 0px 0px 0px 8px;*/
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menupc {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial;
+    padding: 10px;
+    color: white;
+}
+
+.menupc:hover {
+    font-size: 18px;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 70%;
+    color: white;
+}
+
+#open {
+    color: black;
+}
+
+header i {
+    padding: 20px;
+}
+
+
+#desplegable:target {
+    top:0;
+    z-index: 3;
+    opacity: 1;
+}
+
+
+/***** SECTION *******/
+
+section {
+    background-color: #edead6;
+    width: 85%;
+   
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    z-index: -1;
+}
+
+
+
+#texto {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+}
+iframe{
+    height: 250px;
+    width: 75%; 
+}
+
+/***** FIGURE *******/
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 10px;
+}
+
+figure div {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color:  rgb(223, 138, 180);
+}
+
+figure img {
+    width: 75%;
+    height: 200px;
+}
+
+
+/***** FOOTER*******/
+
+
+footer {
+    
+    height: 200px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer i {
+    padding: 1px;
+    height: 15px;
+    width:100%;
+}
+
+
+} /*** final media mobile ***/
+
+
